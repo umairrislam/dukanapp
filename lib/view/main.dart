@@ -26,8 +26,8 @@ class Welcomescreen extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                  height: 100,
-                  width: 100,
+                  height: mediaQuery.height * .6,
+                  width: mediaQuery.width * 1,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(20.0),
@@ -64,9 +64,9 @@ class Welcomescreen extends StatelessWidget {
                 //     ),
                 //   ],
                 // ),
-                SizedBox(height: mediaQuery.height * .001),
+                SizedBox(height: mediaQuery.height * .03),
                 Container(
-                  height: mediaQuery.height * 0.2,
+                  height: mediaQuery.height * 0.3,
                   child: Column(
                     children: [
                       Text(
@@ -78,15 +78,16 @@ class Welcomescreen extends StatelessWidget {
                         "Join with us",
                         style: TextStyle(fontSize: 15),
                       ),
-                      SizedBox(height: mediaQuery.height * .009),
+                      SizedBox(height: mediaQuery.height * .04),
                       Container(
-                        width: 200,
-                        height:mediaQuery.height * .06,
+                        width: mediaQuery.width * .5,
+                        height:40,
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
                             colors: [Colors.blue, Colors.green],
                            
                           ),
+                          
                           borderRadius: BorderRadius.circular(100),
                         ),
                         child: ElevatedButton(
@@ -110,9 +111,9 @@ class Welcomescreen extends StatelessWidget {
                   ),
                 ),
         
-                SizedBox(height: mediaQuery.height * .001),
+                SizedBox(height: 4),
                 Container(
-                  margin: EdgeInsets.only(top:mediaQuery.height * .05),
+                  margin: EdgeInsets.only(top:10),
                   padding: EdgeInsets.symmetric(horizontal: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -121,63 +122,63 @@ class Welcomescreen extends StatelessWidget {
                       Text(
                         'Prev',
                         style: TextStyle(
+                            fontSize: 20,
+                            color: Color(0xffC5EB6D),
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Expanded(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 20,
+                              height: 12,
+                              decoration: BoxDecoration(
+                                color: Color(0xffC5EB6D),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                            ),
+                            SizedBox(
+                              width: 2,
+                            ),
+                            Container(
+                              width: 12,
+                              height: 12,
+                              decoration: BoxDecoration(
+                                color: Color(0xffD9D9D9),
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                            ),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Container(
+                              width: 12,
+                              height: 12,
+                              decoration: BoxDecoration(
+                                color: Color(0xffD9D9D9),
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Text(
+                        'Next',
+                        style: TextStyle(
                             fontSize: 30,
                             color: Color(0xffC5EB6D),
                             fontWeight: FontWeight.bold),
                       ),
-                     // Expanded(
-                //         child: Row(
-                //           mainAxisAlignment: MainAxisAlignment.center,
-                //           children: [
-                //             Container(
-                //               width: 30,
-                //               height: 12,
-                //               decoration: BoxDecoration(
-                //                 color: Color(0xffC5EB6D),
-                //                 borderRadius: BorderRadius.circular(10),
-                //               ),
-                //             ),
-                //             SizedBox(
-                //               width: 8,
-                //             ),
-                //             Container(
-                //               width: 12,
-                //               height: 12,
-                //               decoration: BoxDecoration(
-                //                 color: Color(0xffD9D9D9),
-                //                 borderRadius: BorderRadius.circular(20),
-                //               ),
-                //             ),
-                //             SizedBox(
-                //               width: 8,
-                //             ),
-                //             Container(
-                //               width: 12,
-                //               height: 12,
-                //               decoration: BoxDecoration(
-                //                 color: Color(0xffD9D9D9),
-                //                 borderRadius: BorderRadius.circular(20),
-                //               ),
-                //             ),
-                //           ],
-                //         ),
-                //       ),
-                //       Text(
-                //         'Next',
-                //         style: TextStyle(
-                //             fontSize: 30,
-                //             color: Color(0xffC5EB6D),
-                //             fontWeight: FontWeight.bold),
-                //       ),
-                //     ],
-                //   ),
-                // ),
-                //SizedBox(height: mediaQuery.height * .0091),
-              ],
+                    ],
+                  ),
+                ),
+                SizedBox(height: mediaQuery.height * .001),
+          ],
             ),
           ),
-       ] ),
+       ),
       ),
-      )));
+      );
   }
 }
