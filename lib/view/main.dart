@@ -17,7 +17,7 @@ class Welcomescreen extends StatelessWidget {
     final mediaQuery = MediaQuery.of(context).size;
 
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 243, 189, 189),
+      backgroundColor: Color.fromARGB(255, 254, 252, 252),
       body: SingleChildScrollView(
         child: Expanded(
           child: Container(
@@ -166,7 +166,7 @@ class Welcomescreen extends StatelessWidget {
                       Text(
                         'Next',
                         style: TextStyle(
-                            fontSize: 30,
+                            fontSize: 20,
                             color: Color(0xffC5EB6D),
                             fontWeight: FontWeight.bold),
                       ),
