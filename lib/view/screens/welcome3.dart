@@ -2,9 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:muproject/view/screens/welcome2.dart';
+import 'package:muproject/view/screens/welcome1.dart';
 
-class Welcome1 extends StatelessWidget {
-  const Welcome1({super.key});
+
+class Welcome3 extends StatelessWidget {
+  const Welcome3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +32,7 @@ class Welcome1 extends StatelessWidget {
                       color: Color(0xffc5EB6D),
                     ),
                     child: Image(
-                      image: AssetImage('assets/images/one.png'),
+                      image: AssetImage('assets/images/third.png'),
                       height: 50,
                       width: 50,
                     ),
@@ -42,12 +44,12 @@ class Welcome1 extends StatelessWidget {
                     child: Column(
                       children: [
                         Text(
-                          "Welcome",
+                          "Shopping",
                           style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
                         ),
                         SizedBox(height: mediaQuery.height * .004),
                         Text(
-                          "Join with us",
+                          "Branded Products on Cheap Prices",
                           style: TextStyle(fontSize: 15),
                         ),
                         SizedBox(height: mediaQuery.height * .06),
@@ -56,7 +58,7 @@ class Welcome1 extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => Welcome2(),
+                                builder: (context) => Welcome1(),
                               ),
                             );
                           },
@@ -169,7 +171,7 @@ class Welcome1 extends StatelessWidget {
                    color: Color(0xffc5EB6D),
                  ),
                  child: Image(
-                   image: AssetImage('assets/images/one.png'),
+                   image: AssetImage('assets/images/third.png'),
                    height: 50,
                    width: 50,
                  ),
@@ -181,12 +183,12 @@ class Welcome1 extends StatelessWidget {
                       child: Column(
                         children: [
                           Text(
-                            "Welcome",
+                            "Shopping",
                             style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                           ),
                           SizedBox(height: mediaQuery.height * .002),
                           Text(
-                            "Join with us",
+                            "Branded Products on cheap prices",
                             style: TextStyle(fontSize: 15),
                           ),
                           SizedBox(height: mediaQuery.height * .01),
