@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class DisplayProduct extends StatelessWidget {
   const DisplayProduct({super.key});
@@ -87,12 +88,12 @@ class DisplayProduct extends StatelessWidget {
                                   color: Color(0xff000000).withOpacity(.4)),
                             ),),
                         SizedBox(
-                          height: 15,
+                          height: 10,
                         ),
 
                         //PRODUCT NAME AND ADDING BOX
                          Container(
-                            height: mediaQuery.height * .06,
+                            height: mediaQuery.height * .04,
                             width: mediaQuery.width * 1,
                             padding: EdgeInsets.only(left: 30),
                             color: Colors.amber,
@@ -109,7 +110,25 @@ class DisplayProduct extends StatelessWidget {
 
                                 //Container for add items
 
-                                Container(),
+                                Container(
+                                  margin: EdgeInsets.only(left: 35),
+                                  
+                                  height: 26,
+                                  width: 61,
+                                  decoration: BoxDecoration(
+                                    color: Colors.tealAccent,
+                                    borderRadius: BorderRadius.circular(20)
+                                  ),
+                                  child:Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    children: [
+                                      FaIcon(FontAwesomeIcons.minus,size: 15,color: Color(0xffffffff),),
+                                      Text('1',style: TextStyle(fontSize: 20,color: Color(0xffffffff)),),
+                                     
+                                       FaIcon(FontAwesomeIcons.plus,size: 15,color: Color(0xffffffff),),
+                                    ],
+                                  ),
+                                ),
                               ],
                             ),),
                       ],
