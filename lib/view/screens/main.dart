@@ -5,13 +5,15 @@ import 'package:muproject/view/screens/welcome1.dart';
 import 'package:muproject/view/screens/displayproduct.dart';
 import 'package:get/get.dart';
 import 'package:muproject/Controller/itemcount.dart';
+import 'package:muproject/view/screens/welcomescreen.dart';
 
 
 
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: DisplayProduct(),
+    home: welcomescreen(),
+
     
   ));
 

@@ -150,7 +150,7 @@ class Welcome1 extends StatelessWidget {
             ),
        );
       
-      else
+       else
        return SingleChildScrollView(
         scrollDirection: Axis.vertical,
          child: Container(
